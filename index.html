@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell me about you</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- 
+Tell me about you (Titulo)
+La idea es una pagina, es que al poner datos como pais de origen, que se muestren datos interesantes sobre ese pais,
+o tu fecha de nacimiento, acontecimietos de esa fecha en especifico y ademas sobre ese año,
+o cosas sobre tu signo zodiacal entre otras cosas 
+-->
+    <header>
+        <h1>Tell me about you</h1>
+    </header>
+
+    <main>
+        <form class="información" action="">
+            <div>
+                <label class="label" for="pais">Pais de Origen</label>
+                <input class="input" type="text" id="pais" name="pais">
+            </div>
+
+            <div>
+                <label class="label" for="año_nacimiento">Año de nacimiento</label>
+                <input class="input" type="date" name="año_nacimiento" id="año_nacimiento">
+            </div>
+
+            <div>
+                <input class="buton" type="button" value="Enviar" onclick="mostrarPais()">
+            </div>
+        </form>
+
+        <div class="resultados">
+            <ul id="paises-lista"></ul>
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/js.js"></script>
+
+
+</body>
+
+</html>
